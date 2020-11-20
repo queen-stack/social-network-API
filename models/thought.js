@@ -17,12 +17,12 @@ const ReactionSchema = new Schema(
       },
       userName: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       },
       createdAt: {
         type: Date,
         default: Date.now,
-        // added getters so date is formatted with Moment method
         get: createdAtVal => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
       }
     }
@@ -30,7 +30,7 @@ const ReactionSchema = new Schema(
 
 const ThoughtSchema = new Schema(
       {
-        thoughtText: {
+        thoughtBody: {
           type: String,
           required: true,
           minlength:1,      // criteria
@@ -46,7 +46,7 @@ const ThoughtSchema = new Schema(
             type: String,
             required: true
           },
-        reaction: [ReactionSchema]
+        reactions: [ReactionSchema]
       },
         // Virtual added, which is separated from grouping
       // this Virtual is for count of friends
