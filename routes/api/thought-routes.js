@@ -12,17 +12,17 @@ const {
 const { route } = require('./user-routes');
 
 // ---------------- routes ----------------
-router  
-    .route('/')
-    .get(getAllThoughts)
-    .get(getThoughtById);
+// router  
+//     .route('/')
+//     .get(getAllThoughts)
+//     .get(getThoughtById);
 
 router
     .route('/:userId').post(addThought);
 
 router
         .route('/:userId/:thoughtId')   // Thought routes
-        .put(updateThought)
+        // .put(updateThought)
         .put(addReaction)               // Reaction routes, which are within the Thought controller
         .delete(removeThought)          // delete Thought
 
