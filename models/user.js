@@ -13,12 +13,12 @@ const UserSchema = new Schema(
       trim: true
     },
     email: {
-        type: String,
-        unique: true,
-        match: [/.+@.+\..+/, 'Please enter a valid e-mail address'],
-        required: 'Password is Required',
-        trim: true
-      },
+      type: String,
+      unique: true,
+      match: [/.+@.+\..+/, 'Please enter a valid e-mail address'],
+      required: 'Password is Required',
+      trim: true
+    },
       
     // thoughtArray: [],    
     // // parent (User model) associates to child documents (Thought model)
@@ -50,8 +50,7 @@ const UserSchema = new Schema(
 // --  To add virtuals, (1) this definition (2) update schema above with toJSON property
       //get total count of friends on retrieval
   UserSchema.virtual('friendCount').get(function() {
-        return this.friends.length;    
-    // return this.friends.reduce((total, friend) => total + friend.length + 1, 0);
+    return this.friends.length;    
   });
     
 
