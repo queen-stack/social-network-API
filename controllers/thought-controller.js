@@ -86,6 +86,8 @@ const thoughtController = {
     // add Reaction method resides within the thoughtController, 
     // note: new reactions are NOT adding, are Updating an existing Thought
     addReaction({ params, body }, res) {
+      console.log(params);
+      console.log(body);
       Thought.findOneAndUpdate(
         { _id: params.thoughtId },
         { $push: { reactions: body } },
