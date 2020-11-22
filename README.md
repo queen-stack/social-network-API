@@ -20,9 +20,9 @@
 * Invoking the application at the terminal, JavaScript begins with the start up of the Express.js server then creates the Mongoose table models, syncing to the MongoDB backend. 
 * You can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts,  reactions to their friends' thoughts are added, updated or removed - essentially the social interaction of a group of friends.
 
-💻 Below shows the functionality of the application via insomnia and can be found within my google drive:
+💻 Below shows the functionality of the application via insomnia and can be found within my google drive: Inclusive of the Bonus - Remove a User and all their Thoughts!
 
-[![Video](./Assets/application.png)](https://drive.google.com/file/d/19FP8Rfz9Ur_mWZFUr8PHtJcAxI7Ry8q6/preview)
+[![Video](./assets/application.png)](https://drive.google.com/file/d/1uwleLXhmm0jrK-LNB2EoF5RIW18-yIto/view?usp=sharing)
    
 
 ## User Story
