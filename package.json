@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/queen-stack/social-network-API/issues"
   },
-  "homepage": "https://github.com/queen-stack/social-network-API#readme"
+  "homepage": "https://github.com/queen-stack/social-network-API#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {}
 }

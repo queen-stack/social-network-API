@@ -67,7 +67,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - $ npm init -y or $ npm install
 - Install npm express, more info https://www.npmjs.com/package/express
 - $ npm install express
-- Manaully update the package.json to "main": "server.js", instead of index.js
+- Manually update the package.json to "main": "server.js", instead of index.js
 - Create a .gitignore file in the root and add node_modules to this file
 - If you need to re-add the dependencies, run $ npm install
 - Install MongoDB, first create a c:/data/db directory on your root, then install the Community Server from<br> https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.

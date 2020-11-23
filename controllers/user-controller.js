@@ -96,6 +96,10 @@ const userController = {
   // in the list ($addToSet)
   addFriend({ params }, res) {
     console.log(params);
+    if (params.id === params.friendId) {
+      res.status(400).json({ message: "Cannot friend yourself." });
+      return;
+    }
     User.findOneAndUpdate(
       { _id: params.id },
       { $addToSet: { friends: params.friendId } },
